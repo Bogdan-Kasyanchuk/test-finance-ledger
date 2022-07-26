@@ -13,7 +13,7 @@ import {
 const Logo = ({ firstChildren, secondChildren }) => {
   return (
     <CustomNavLink to="/" className="logo">
-      <Icon iconName="logo" width="39px" height="31px" />
+      <Icon iconName="logo" width="40px" height="31px" />
       {firstChildren}
       <Span>{secondChildren}</Span>
     </CustomNavLink>
@@ -52,7 +52,7 @@ const CustomNavLink = styled(NavLink)`
   }
 
   :hover,
-  :focus {
+  :focus-visible {
     transform: scale(1.05);
   }
 `;

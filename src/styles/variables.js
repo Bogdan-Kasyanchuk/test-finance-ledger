@@ -15,6 +15,9 @@ const border = '1px solid';
 const duration = '250ms';
 const timing = 'cubic-bezier(0.4, 0, 0.2, 1)';
 
+// gradient
+const linGradBgHome = 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4))';
+
 //breakpoints
 const size = {
   mobileMin: '@media screen and (min-width: 320px)',
@@ -25,9 +28,6 @@ const size = {
 };
 
 export {
-  size,
-  duration,
-  timing,
   firstColor,
   secondColor,
   thirdColor,
@@ -37,4 +37,8 @@ export {
   backgroundColor,
   borderRadius,
   border,
+  duration,
+  timing,
+  linGradBgHome,
+  size,
 };
