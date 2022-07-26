@@ -5,26 +5,28 @@ import {
   size,
   secondColor,
   accentColor,
+  border,
   borderRadius,
   duration,
   timing,
 } from 'styles/variables';
 
-const ButtonIconText = ({ iconName, children }) => {
+const BtnLinkIconText = ({ iconName, children, home }) => {
   return (
-    <A href="#">
+    <A href="#" home={home}>
       <Icon iconName={iconName} />
       {children}
     </A>
   );
 };
 
-ButtonIconText.propTypes = {
+BtnLinkIconText.propTypes = {
   iconName: PropTypes.string,
   children: PropTypes.node,
+  home: PropTypes.bool,
 };
 
-export default ButtonIconText;
+export default BtnLinkIconText;
 
 const A = styled.a`
   display: inline-block;
@@ -32,10 +34,14 @@ const A = styled.a`
   font-size: 16px;
   font-weight: 400;
   line-height: 1.6;
-  color: ${secondColor};
+  color: ${({ home }) => (home ? secondColor : null)};
+  border: ${({ home }) => (home ? null : border)};
   border-radius: ${borderRadius};
-  background-color: ${accentColor};
-  transition: background-color ${duration} ${timing};
+  background-color: ${({ home }) => (home ? accentColor : null)};
+  transition: ${({ home }) =>
+    home
+      ? `background-color ${duration} ${timing}`
+      : `color ${duration} ${timing}, background-color ${duration} ${timing}`};
 
   ${size.tabletMin} {
     font-size: 18px;
@@ -52,6 +58,8 @@ const A = styled.a`
 
   :hover,
   :focus-visible {
-    background-color: rgba(40, 167, 69, 0.9);
+    color: ${({ home }) => (home ? null : accentColor)};
+    background-color: ${({ home }) =>
+      home ? 'rgba(40, 167, 69, 0.9)' : secondColor};
   }
 `;

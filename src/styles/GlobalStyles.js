@@ -1,11 +1,11 @@
 import { createGlobalStyle } from 'styled-components';
 import { normalize } from 'styled-normalize';
-// import {
-//   firstColor,
-//   secondColor,
-//   accentColor,
-//   bgColor,
-// } from 'styles/variables';
+import {
+  firstColor,
+  // secondColor,
+  // accentColor,
+  // bgColor,
+} from 'styles/variables';
 
 const GlobalStyles = createGlobalStyle`
 ${normalize}
@@ -43,7 +43,7 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   ${'' /* font-size: 16px; */}
-  ${'' /* color: ${firstColor}; */}
+  color: ${firstColor};
   ${'' /* line-height: 1; */}
 }
 
