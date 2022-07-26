@@ -9,7 +9,7 @@ const backgroundColor = '#0284d0';
 
 // border
 const borderRadius = '5px';
-const border = '1px solid';
+const border = '1px solid #fff';
 
 // timingFunc;
 const duration = '250ms';
