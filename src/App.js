@@ -1,9 +1,7 @@
+import AppBar from 'components/AppBar/AppBar';
+
 function App() {
-  return (
-    <>
-      <h1>Hello</h1>
-    </>
-  );
+  return <AppBar />;
 }
 
 export default App;
