@@ -73,7 +73,8 @@ img {
 }
 
 button,
-label {
+label, 
+a {
   cursor: pointer;
 }
 

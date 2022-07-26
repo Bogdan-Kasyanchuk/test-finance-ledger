@@ -20,6 +20,10 @@ const AppBar = () => {
 export default AppBar;
 
 const Header = styled.header`
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
 
