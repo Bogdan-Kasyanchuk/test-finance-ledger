@@ -24,10 +24,11 @@ const Header = styled.header`
   background-color: #333;
   position: fixed;
   top: 0;
+  left: 50%;
   z-index: 1000;
-  width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
+  transform: translateX(-50%);
 
   ${size.desktopMin} {
     padding-top: 14px;

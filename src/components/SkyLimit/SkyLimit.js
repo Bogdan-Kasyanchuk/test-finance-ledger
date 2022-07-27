@@ -22,9 +22,6 @@ const SkyLimit = () => {
 export default SkyLimit;
 
 const Section = styled.section`
-  margin-left: auto;
-  margin-right: auto;
-  width: 320px;
   padding-top: 142px;
   padding-bottom: 96px;
   text-align: center;
@@ -42,7 +39,6 @@ const Section = styled.section`
   }
 
   ${size.tabletMin} {
-    width: 768px;
     padding-top: 406px;
     padding-bottom: 410px;
     background-image: ${linGradBgHome}, url(${imgShowcase.showcaseTab});
@@ -55,7 +51,6 @@ const Section = styled.section`
   }
 
   ${size.desktopMin} {
-    width: 1360px;
     padding-top: 278px;
     padding-bottom: 282px;
     background-image: ${linGradBgHome}, url(${imgShowcase.showcaseDesk});

@@ -46,17 +46,8 @@ const BespokeSolutions = () => {
 export default BespokeSolutions;
 
 const Section = styled.section`
-  margin-left: auto;
-  margin-right: auto;
-  width: 320px;
-
   ${size.tabletMin} {
     display: flex;
-    width: 768px;
-  }
-
-  ${size.desktopMin} {
-    width: 1360px;
   }
 `;
 
