@@ -75,6 +75,7 @@ const CasesGallery = () => {
       {isOpen && (
         <Lightbox
           allowZoom={false}
+          allowRotate={false}
           startIndex={index}
           onClose={closeModal}
           images={images.map(el => {

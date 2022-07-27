@@ -1,11 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import { normalize } from 'styled-normalize';
-import {
-  firstColor,
-  // secondColor,
-  // accentColor,
-  // bgColor,
-} from 'styles/variables';
+import { size, firstColor } from 'styles/variables';
 
 const GlobalStyles = createGlobalStyle`
 ${normalize}
@@ -19,6 +14,20 @@ ${normalize}
 * {
   padding: 0;
   border: 0;
+}
+
+#root{
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+
+  ${size.tabletMin} {
+    width: 768px;
+  }
+
+  ${size.desktopMin} {
+    width: 1360px;
+  }
 }
 
 *,
