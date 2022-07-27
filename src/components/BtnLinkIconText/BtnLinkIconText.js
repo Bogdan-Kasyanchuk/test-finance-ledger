@@ -5,15 +5,16 @@ import {
   size,
   secondColor,
   accentColor,
+  backgroundColor,
   border,
   borderRadius,
   duration,
   timing,
 } from 'styles/variables';
 
-const BtnLinkIconText = ({ iconName, children, home }) => {
+const BtnLinkIconText = ({ iconName, children, home, blog }) => {
   return (
-    <A href="#" home={home}>
+    <A href="#" home={home} blog={blog}>
       <Icon iconName={iconName} />
       {children}
     </A>
@@ -24,6 +25,7 @@ BtnLinkIconText.propTypes = {
   iconName: PropTypes.string,
   children: PropTypes.node,
   home: PropTypes.bool,
+  blog: PropTypes.bool,
 };
 
 export default BtnLinkIconText;
@@ -58,7 +60,8 @@ const A = styled.a`
 
   :hover,
   :focus-visible {
-    color: ${({ home }) => (home ? null : accentColor)};
+    color: ${({ home, blog }) =>
+      home ? null : blog ? backgroundColor : accentColor};
     background-color: ${({ home }) =>
       home ? 'rgba(40, 167, 69, 0.9)' : secondColor};
   }

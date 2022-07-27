@@ -20,6 +20,8 @@ const AppBar = () => {
 export default AppBar;
 
 const Header = styled.header`
+  opacity: 0.8;
+  background-color: #333;
   position: fixed;
   top: 0;
   z-index: 1000;
