@@ -31,6 +31,7 @@ const images = [
 const CasesGallery = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [index, setIndex] = useState(0);
+
   const openModal = ({ target }) => {
     if (target.nodeName !== 'IMG') {
       return;
