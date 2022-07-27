@@ -53,7 +53,7 @@ const CustomNavLink = styled(NavLink)`
 
   :hover,
   :focus-visible {
-    transform: scale(1.05);
+    transform: scale(1.03);
   }
 `;
 

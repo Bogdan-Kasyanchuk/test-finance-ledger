@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import Container from 'components/Container/Container';
 import Title from 'components/Title/Title';
 import BtnLinkIconText from 'components/BtnLinkIconText/BtnLinkIconText';
-import * as img from 'components/SkyLimit/imageImport';
+import * as imgShowcase from 'components/SkyLimit/imageShowcaseImport';
 import { size, firstColor, thirdColor, linGradBgHome } from 'styles/variables';
 
 const SkyLimit = () => {
@@ -31,13 +31,13 @@ const Section = styled.section`
   background-color: ${firstColor};
   background-size: cover;
   background-position: center;
-  background-image: ${linGradBgHome}, url(${img.showcaseMob});
+  background-image: ${linGradBgHome}, url(${imgShowcase.showcaseMob});
 
   ${size.mobileMax} {
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: ${linGradBgHome}, url(${img.showcaseMob_2x});
+      background-image: ${linGradBgHome}, url(${imgShowcase.showcaseMob_2x});
     }
   }
 
@@ -45,12 +45,12 @@ const Section = styled.section`
     width: 768px;
     padding-top: 406px;
     padding-bottom: 410px;
-    background-image: ${linGradBgHome}, url(${img.showcaseTab});
+    background-image: ${linGradBgHome}, url(${imgShowcase.showcaseTab});
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: ${linGradBgHome}, url(${img.showcaseTab_2x});
+      background-image: ${linGradBgHome}, url(${imgShowcase.showcaseTab_2x});
     }
   }
 
@@ -58,12 +58,12 @@ const Section = styled.section`
     width: 1360px;
     padding-top: 278px;
     padding-bottom: 282px;
-    background-image: ${linGradBgHome}, url(${img.showcaseDesk});
+    background-image: ${linGradBgHome}, url(${imgShowcase.showcaseDesk});
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: ${linGradBgHome}, url(${img.showcaseDesk_2x});
+      background-image: ${linGradBgHome}, url(${imgShowcase.showcaseDesk_2x});
     }
   }
 
