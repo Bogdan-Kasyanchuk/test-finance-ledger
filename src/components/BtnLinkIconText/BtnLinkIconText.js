@@ -5,7 +5,7 @@ import {
   size,
   secondColor,
   accentColor,
-  backgroundColor,
+  bgColor,
   border,
   borderRadius,
   duration,
@@ -60,8 +60,7 @@ const A = styled.a`
 
   :hover,
   :focus-visible {
-    color: ${({ home, blog }) =>
-      home ? null : blog ? backgroundColor : accentColor};
+    color: ${({ home, blog }) => (home ? null : blog ? bgColor : accentColor)};
     background-color: ${({ home }) =>
       home ? 'rgba(40, 167, 69, 0.9)' : secondColor};
   }

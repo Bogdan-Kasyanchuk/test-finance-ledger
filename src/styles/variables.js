@@ -5,7 +5,8 @@ const thirdColor = '#e9e9e9';
 const fourthColor = '#808080';
 const accentColor = '#28a745';
 const errorColor = '#ce0a0a';
-const backgroundColor = '#0284d0';
+const bgColor = '#0284d0';
+const bgColorForm = '#f4f4f4';
 
 // border
 const borderRadius = '5px';
@@ -24,6 +25,7 @@ const size = {
   mobileMax: '@media screen and (max-width: 767px)',
   tabletMin: '@media screen and (min-width: 768px)',
   tabletMax: '@media screen and (max-width: 1359px)',
+  '1024Min': '@media screen and (min-width: 1024px)',
   desktopMin: '@media screen and (min-width: 1360px)',
 };
 
@@ -34,7 +36,8 @@ export {
   fourthColor,
   accentColor,
   errorColor,
-  backgroundColor,
+  bgColor,
+  bgColorForm,
   borderRadius,
   border,
   duration,

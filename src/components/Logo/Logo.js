@@ -37,6 +37,11 @@ const CustomNavLink = styled(NavLink)`
   color: ${accentColor};
   transition: transform ${duration} ${timing};
 
+  ${size.tabletMin} {
+    font-size: 35px;
+    line-height: 1.21;
+  }
+
   .icon {
     margin-right: 6px;
     fill: currentColor;
@@ -44,11 +49,6 @@ const CustomNavLink = styled(NavLink)`
     ${size.tabletMin} {
       margin-right: 10px;
     }
-  }
-
-  ${size.tabletMin} {
-    font-size: 35px;
-    line-height: 1.21;
   }
 
   :hover,

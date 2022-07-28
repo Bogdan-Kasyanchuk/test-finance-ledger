@@ -8,10 +8,10 @@ const AppBar = () => {
   return (
     <Header>
       <Container>
-        <Div>
+        <Nav>
           <Logo firstChildren="Finance" secondChildren="Ledger" />
           <Navigation />
-        </Div>
+        </Nav>
       </Container>
     </Header>
   );
@@ -24,11 +24,11 @@ const Header = styled.header`
   background-color: #333;
   position: fixed;
   top: 0;
-  left: 50%;
   z-index: 1000;
+  width: 100%;
+  max-width: 1360px;
   padding-top: 20px;
   padding-bottom: 20px;
-  transform: translateX(-50%);
 
   ${size.desktopMin} {
     padding-top: 14px;
@@ -36,20 +36,21 @@ const Header = styled.header`
   }
 `;
 
-const Div = styled.div`
+const Nav = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 
-  .logo {
-    ${size.mobileMax} {
-      margin-bottom: 12px;
-    }
-  }
-
   ${size.tabletMin} {
     justify-content: space-between;
     flex-wrap: nowrap;
+  }
+
+  .logo {
+    ${size.mobileMax} {
+      margin-bottom: 12px;
+      flex-basis: 100%;
+    }
   }
 `;

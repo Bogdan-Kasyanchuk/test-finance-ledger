@@ -19,10 +19,9 @@ ${normalize}
 #root{
   margin-left: auto;
   margin-right: auto;
-  width: 320px;
 
   ${size.tabletMin} {
-    width: 768px;
+    min-width: 768px;
   }
 
   ${size.desktopMin} {
@@ -38,11 +37,6 @@ h4,
 h5,
 h6 {
   margin: 0;
-}
-
-html,
-body {
-  height: 100%;
 }
 
 html {
@@ -76,8 +70,8 @@ ul {
 
 img {
   display: block;
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 

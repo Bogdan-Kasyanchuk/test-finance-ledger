@@ -1,14 +1,17 @@
-import styled from 'styled-components';
+import SectionBlog from 'components/SectionBlog/SectionBlog';
+import ImageBlogWrapper from 'components/ImageBlogWrapper/ImageBlogWrapper';
 import Image from 'components/Image/Image';
+import TextBlogWrapper from 'components/TextBlogWrapper/TextBlogWrapper';
+import Paragraph from 'components/Paragraph/Paragraph';
 import SubTitle from 'components/SubTitle/SubTitle';
+import ParagraphText from 'components/ParagraphText/ParagraphText';
 import BtnLinkIconText from 'components/BtnLinkIconText/BtnLinkIconText';
-import * as imgPeople from 'components/BespokeSolutions/imagePeopleImport';
-import { size, secondColor, accentColor } from 'styles/variables';
+import * as imgPeople from 'helpers/imageImport/BespokeSolutions/imagePeople';
 
 const BespokeSolutions = () => {
   return (
-    <Section>
-      <div>
+    <SectionBlog>
+      <ImageBlogWrapper>
         <Image
           deskWebp={imgPeople.peopleDeskWebp}
           deskWebp_2x={imgPeople.peopleDeskWebp_2x}
@@ -23,77 +26,22 @@ const BespokeSolutions = () => {
           mob={imgPeople.peopleMob}
           mob_2x={imgPeople.peopleMob_2x}
           src={imgPeople.peopleMob}
-          width={670}
-          height={460}
           alt="People"
         />
-      </div>
-      <Div>
-        <P1>What you are looking for</P1>
+      </ImageBlogWrapper>
+      <TextBlogWrapper>
+        <Paragraph>What you are looking for</Paragraph>
         <SubTitle>We provide bespoke solutions</SubTitle>
-        <P2>
+        <ParagraphText>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate,
           ipsum dignissimos quae laudantium asperiores nam aliquid impedit harum
           illum dolore explicabo ab dolores itaque rerum temporibus doloribus
           iste maiores deleniti?
-        </P2>
+        </ParagraphText>
         <BtnLinkIconText iconName="arrow">Read More</BtnLinkIconText>
-      </Div>
-    </Section>
+      </TextBlogWrapper>
+    </SectionBlog>
   );
 };
 
 export default BespokeSolutions;
-
-const Section = styled.section`
-  ${size.tabletMin} {
-    display: flex;
-  }
-`;
-
-const Div = styled.div`
-  background-color: ${accentColor};
-  padding: 40px 20px;
-  color: ${secondColor};
-
-  ${size.tabletMin} {
-    min-width: 400px;
-    max-width: 400px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-
-  ${size.desktopMin} {
-    min-width: 690px;
-    max-width: 690px;
-    padding: 80px 20px;
-  }
-
-  .sub-title {
-    margin-bottom: 24px;
-  }
-`;
-
-const P1 = styled.p`
-  margin-bottom: 8px;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.66;
-
-  ${size.tabletMin} {
-    font-size: 20px;
-    line-height: 1.65;
-  }
-`;
-
-const P2 = styled.p`
-  margin-bottom: 24px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.6;
-
-  ${size.tabletMin} {
-    font-size: 18px;
-    line-height: 1.56;
-  }
-`;

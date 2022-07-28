@@ -2,31 +2,10 @@ import { useState } from 'react';
 import styled from 'styled-components';
 import Lightbox from 'react-awesome-lightbox';
 import 'react-awesome-lightbox/build/style.css';
+import GalleryList from 'components/GalleryList/GalleryList';
 import Image from 'components/Image/Image';
-import * as imgMeeting from 'components/CasesGallery/imageMeetingImport';
-import * as imgManWorking from 'components/CasesGallery/imageManWorkingImport';
-import * as imgHandshake from 'components/CasesGallery/imageHandshakeImport';
-import * as imgHands from 'components/CasesGallery/imageHandsImport';
-import * as imgWomanWorking from 'components/CasesGallery/imageWomanWorkingImport';
-import * as imgBuildings from 'components/CasesGallery/imageBuildingsImport';
+import { images } from 'helpers/imageImport/CasesGallery/allImage';
 import { size, duration, timing } from 'styles/variables';
-
-const images = [
-  { url: imgMeeting, urlModal: imgMeeting.meeting, title: 'Meeting' },
-  {
-    url: imgManWorking,
-    urlModal: imgManWorking.manWorking,
-    title: 'Man working',
-  },
-  { url: imgHandshake, urlModal: imgHandshake.handshake, title: 'Handshake' },
-  { url: imgHands, urlModal: imgHands.hands, title: 'Hands' },
-  {
-    url: imgWomanWorking,
-    urlModal: imgWomanWorking.womanWorking,
-    title: 'Woman working',
-  },
-  { url: imgBuildings, urlModal: imgBuildings.buildings, title: 'Buildings' },
-];
 
 const CasesGallery = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,7 +27,7 @@ const CasesGallery = () => {
 
   return (
     <>
-      <Ul onClick={openModal}>
+      <GalleryList cases onClick={openModal}>
         {images.map(el => (
           <Li key={el.title}>
             <Image
@@ -65,13 +44,11 @@ const CasesGallery = () => {
               mob={el.url.mob}
               mob_2x={el.url.mob_2x}
               src={el.url.mob}
-              width={421}
-              height={282}
               alt={el.title}
             />
           </Li>
         ))}
-      </Ul>
+      </GalleryList>
       {isOpen && (
         <Lightbox
           allowZoom={false}
@@ -89,19 +66,6 @@ const CasesGallery = () => {
 
 export default CasesGallery;
 
-const Ul = styled.ul`
-  ${size.tabletMin} {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, calc((100% - 2 * 18px) / 3));
-    justify-content: space-between;
-    grid-row-gap: 18px;
-  }
-
-  ${size.desktopMin} {
-    grid-template-columns: repeat(auto-fill, calc((100% - 2 * 20px) / 3));
-    grid-row-gap: 24px;
-  }
-`;
 const Li = styled.li`
   transition: opacity ${duration} ${timing};
 

@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 
 const Image = ({
   deskWebp,
@@ -15,20 +14,18 @@ const Image = ({
   mob,
   mob_2x,
   src,
-  width,
-  height,
   alt,
 }) => {
   return (
     <picture>
       <source
         srcSet={`${deskWebp} 1x, ${deskWebp_2x} 2x`}
-        media="(min-width: 1360px)"
+        media="(min-width: 1024px)"
         type="image/webp"
       />
       <source
         srcSet={`${desk} 1x, ${desk_2x} 2x`}
-        media="(min-width: 1360px)"
+        media="(min-width: 1024px)"
       />
       <source
         srcSet={`${tabWebp} 1x, ${tabWebp_2x} 2x`}
@@ -42,7 +39,7 @@ const Image = ({
         type="image/webp"
       />
       <source srcSet={`${mob} 1x, ${mob_2x} 2x`} media="(max-width: 767px)" />
-      <Img src={src} width={width} height={height} alt={alt} />
+      <img src={src} alt={alt} />
     </picture>
   );
 };
@@ -61,11 +58,7 @@ Image.propTypes = {
   mob: PropTypes.string.isRequired,
   mob_2x: PropTypes.string.isRequired,
   src: PropTypes.string.isRequired,
-  width: PropTypes.number.isRequired,
-  height: PropTypes.number.isRequired,
   alt: PropTypes.string.isRequired,
 };
 
 export default Image;
-
-const Img = styled.img``;

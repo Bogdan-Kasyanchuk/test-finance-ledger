@@ -4,9 +4,10 @@ import { secondColor, accentColor, duration, timing } from 'styles/variables';
 
 const SocialLinkList = () => {
   return (
-    <Ul>
+    <Ul className="social-list">
       <Li>
         <A
+          className="social-link"
           href="https://uk-ua.facebook.com"
           target="_blank"
           rel="noreferrer noopener"
@@ -15,12 +16,18 @@ const SocialLinkList = () => {
         </A>
       </Li>
       <Li>
-        <A href="https://twitter.com" target="_blank" rel="noreferrer noopener">
+        <A
+          className="social-link"
+          href="https://twitter.com"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           <Icon iconName="twiter" width="35px" height="35px" />
         </A>
       </Li>
       <Li>
         <A
+          className="social-link"
           href="https://www.youtube.com/"
           target="_blank"
           rel="noreferrer noopener"
@@ -30,6 +37,7 @@ const SocialLinkList = () => {
       </Li>
       <Li>
         <A
+          className="social-link"
           href="https://www.linkedin.com"
           target="_blank"
           rel="noreferrer noopener"
@@ -51,13 +59,14 @@ const Ul = styled.ul`
 `;
 
 const Li = styled.li`
-  color: ${secondColor};
-  cursor: pointer;
-  transition: color ${duration} ${timing};
-
   :not(:last-child) {
     margin-right: 25px;
   }
+`;
+
+const A = styled.a`
+  color: ${secondColor};
+  transition: color ${duration} ${timing};
 
   .icon {
     display: block;
@@ -69,5 +78,3 @@ const Li = styled.li`
     color: ${accentColor};
   }
 `;
-
-const A = styled.a``;
