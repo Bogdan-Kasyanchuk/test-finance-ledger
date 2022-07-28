@@ -76,5 +76,6 @@ const A = styled.a`
   :hover,
   :focus-visible {
     color: ${accentColor};
+    outline: none;
   }
 `;

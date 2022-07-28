@@ -1,9 +1,9 @@
-import * as imgMeeting from 'helpers/imageImport/CasesGallery/imageMeeting';
-import * as imgManWorking from 'helpers/imageImport/CasesGallery/imageManWorking';
-import * as imgHandshake from 'helpers/imageImport/CasesGallery/imageHandshake';
-import * as imgHands from 'helpers/imageImport/CasesGallery/imageHands';
-import * as imgWomanWorking from 'helpers/imageImport/CasesGallery/imageWomanWorking';
-import * as imgBuildings from 'helpers/imageImport/CasesGallery/imageBuildings';
+import * as imgMeeting from 'service/imageImport/casesGallery/imageMeeting';
+import * as imgManWorking from 'service/imageImport/casesGallery/imageManWorking';
+import * as imgHandshake from 'service/imageImport/casesGallery/imageHandshake';
+import * as imgHands from 'service/imageImport/casesGallery/imageHands';
+import * as imgWomanWorking from 'service/imageImport/casesGallery/imageWomanWorking';
+import * as imgBuildings from 'service/imageImport/casesGallery/imageBuildings';
 
 export const images = [
   { url: imgMeeting, urlModal: imgMeeting.meeting, title: 'Meeting' },

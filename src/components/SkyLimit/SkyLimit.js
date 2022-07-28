@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import Container from 'components/Container/Container';
 import Title from 'components/Title/Title';
 import BtnLinkIconText from 'components/BtnLinkIconText/BtnLinkIconText';
-import * as imgShowcase from 'helpers/imageImport/SkyLimit/imageShowcase';
+import * as imgShowcase from 'service/imageImport/skyLimit/imageShowcase';
 import { size, firstColor, thirdColor, linGradBgHome } from 'styles/variables';
 
 const SkyLimit = () => {
@@ -25,10 +25,10 @@ const Section = styled.section`
   padding-top: 142px;
   padding-bottom: 96px;
   text-align: center;
+  background-image: ${linGradBgHome}, url(${imgShowcase.showcaseMob});
   background-color: ${firstColor};
   background-size: cover;
   background-position: center;
-  background-image: ${linGradBgHome}, url(${imgShowcase.showcaseMob});
 
   ${size.mobileMax} {
     @media (min-device-pixel-ratio: 2),
@@ -74,7 +74,6 @@ const Section = styled.section`
 const P = styled.p`
   margin-bottom: 24px;
   font-size: 22px;
-  font-weight: 400;
   line-height: 1.67;
   color: ${thirdColor};
 

@@ -17,7 +17,6 @@ export default Link;
 const CustomNavLink = styled(NavLink)`
   position: relative;
   font-size: 16px;
-  font-weight: 400;
   line-height: 1.6;
   color: ${secondColor};
 
@@ -26,7 +25,10 @@ const CustomNavLink = styled(NavLink)`
     line-height: 1.56;
   }
 
-  :hover {
+  :hover,
+  :focus-visible {
+    outline: none;
+
     ::after {
       content: '';
       position: absolute;

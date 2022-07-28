@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import Image from 'components/Image/Image';
 import GalleryList from 'components/GalleryList/GalleryList';
 import SocialLinkList from 'components/SocialLinkList/SocialLinkList';
-import { images } from 'helpers/imageImport/aboutGallery/allImage';
+import { images } from 'service/imageImport/aboutGallery/allImage';
 import { size, secondColor, duration, timing } from 'styles/variables';
 
 const AboutGallery = () => {
@@ -71,16 +71,16 @@ const ImageWrapper = styled.div`
     top: 50%;
     left: 50%;
     z-index: 1;
-    opacity: 0;
     margin-bottom: 0;
+    opacity: 0;
     transform: translate(-50%, -50%);
     transition: opacity ${duration} ${timing};
   }
 
   :hover,
   :focus-visible {
-    box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.4);
     transform: scale(1.03);
+    box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.4);
     cursor: pointer;
 
     ::after {
@@ -110,12 +110,10 @@ const TextWrapper = styled.div`
 const H3 = styled.h3`
   margin-bottom: 12px;
   font-size: 23px;
-  font-weight: 400;
   line-height: 1.25;
 `;
 
 const P = styled.p`
   font-size: 16px;
-  font-weight: 400;
   line-height: 1.6;
 `;

@@ -2,13 +2,18 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { size } from 'styles/variables';
 
-const GalleryList = ({ children, cases }) => {
-  return <Ul cases={cases}>{children}</Ul>;
+const GalleryList = ({ children, cases, openModal }) => {
+  return (
+    <Ul onClick={openModal} cases={cases}>
+      {children}
+    </Ul>
+  );
 };
 
 GalleryList.propTypes = {
   children: PropTypes.node,
   cases: PropTypes.bool,
+  openModal: PropTypes.func,
 };
 
 export default GalleryList;
