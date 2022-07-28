@@ -15,12 +15,12 @@ export default Container;
 const Div = styled.div`
   margin-left: auto;
   margin-right: auto;
-  width: 320px;
+  width: 100%;
   padding-left: 20px;
   padding-right: 20px;
 
   ${size.tabletMin} {
-    width: 768px;
+    min-width: 768px;
     padding-left: 32px;
     padding-right: 32px;
   }

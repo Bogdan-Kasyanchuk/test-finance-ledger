@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import Container from 'components/Container/Container';
 import Title from 'components/Title/Title';
 import BtnLinkIconText from 'components/BtnLinkIconText/BtnLinkIconText';
-import * as imgShowcase from 'components/SkyLimit/imageShowcaseImport';
+import * as imgShowcase from 'helpers/imageImport/SkyLimit/imageShowcase';
 import { size, firstColor, thirdColor, linGradBgHome } from 'styles/variables';
 
 const SkyLimit = () => {
@@ -50,7 +50,7 @@ const Section = styled.section`
     }
   }
 
-  ${size.desktopMin} {
+  ${size['1024Min']} {
     padding-top: 278px;
     padding-bottom: 282px;
     background-image: ${linGradBgHome}, url(${imgShowcase.showcaseDesk});
