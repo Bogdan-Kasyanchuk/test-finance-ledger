@@ -14,7 +14,6 @@ export default Paragraph;
 
 const P = styled.p`
   font-size: 18px;
-  font-weight: 400;
   line-height: 1.66;
 
   ${size.tabletMin} {

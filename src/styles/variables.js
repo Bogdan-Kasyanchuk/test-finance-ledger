@@ -2,7 +2,7 @@
 const firstColor = '#333';
 const secondColor = '#fff';
 const thirdColor = '#e9e9e9';
-const fourthColor = '#808080';
+const placeholderColor = '#808080';
 const accentColor = '#28a745';
 const errorColor = '#ce0a0a';
 const bgColor = '#0284d0';
@@ -11,6 +11,7 @@ const bgColorForm = '#f4f4f4';
 // border
 const borderRadius = '5px';
 const border = '1px solid #fff';
+const borderInput = '1px solid #f5f5f5';
 
 // timingFunc;
 const duration = '250ms';
@@ -33,13 +34,14 @@ export {
   firstColor,
   secondColor,
   thirdColor,
-  fourthColor,
+  placeholderColor,
   accentColor,
   errorColor,
   bgColor,
   bgColorForm,
   borderRadius,
   border,
+  borderInput,
   duration,
   timing,
   linGradBgHome,

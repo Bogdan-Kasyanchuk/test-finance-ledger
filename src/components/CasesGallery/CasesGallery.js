@@ -4,7 +4,7 @@ import Lightbox from 'react-awesome-lightbox';
 import 'react-awesome-lightbox/build/style.css';
 import GalleryList from 'components/GalleryList/GalleryList';
 import Image from 'components/Image/Image';
-import { images } from 'helpers/imageImport/CasesGallery/allImage';
+import { images } from 'service/imageImport/casesGallery/allImage';
 import { size, duration, timing } from 'styles/variables';
 
 const CasesGallery = () => {
@@ -27,7 +27,7 @@ const CasesGallery = () => {
 
   return (
     <>
-      <GalleryList cases onClick={openModal}>
+      <GalleryList cases openModal={openModal}>
         {images.map(el => (
           <Li key={el.title}>
             <Image

@@ -19,8 +19,8 @@ const Div = styled.div`
   color: ${secondColor};
 
   ${size.tabletMin} {
-    order: ${({ blog }) => (blog ? -1 : null)};
     flex-basis: calc(400 / 768 * 100%);
+    order: ${({ blog }) => (blog ? -1 : null)};
     padding-left: 32px;
     padding-right: 32px;
   }

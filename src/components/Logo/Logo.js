@@ -32,7 +32,6 @@ const CustomNavLink = styled(NavLink)`
   justify-content: center;
   align-items: center;
   font-size: 32px;
-  font-weight: 400;
   line-height: 1.32;
   color: ${accentColor};
   transition: transform ${duration} ${timing};
@@ -54,6 +53,7 @@ const CustomNavLink = styled(NavLink)`
   :hover,
   :focus-visible {
     transform: scale(1.03);
+    outline: none;
   }
 `;
 

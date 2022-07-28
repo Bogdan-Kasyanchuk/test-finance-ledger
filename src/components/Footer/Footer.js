@@ -20,7 +20,7 @@ export default Footer;
 const FooterTag = styled.footer`
   padding-top: 20px;
   padding-bottom: 20px;
+  color: ${secondColor};
   text-align: center;
   background-color: ${firstColor};
-  color: ${secondColor};
 `;

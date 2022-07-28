@@ -6,7 +6,7 @@ import Paragraph from 'components/Paragraph/Paragraph';
 import SubTitle from 'components/SubTitle/SubTitle';
 import ParagraphText from 'components/ParagraphText/ParagraphText';
 import BtnLinkIconText from 'components/BtnLinkIconText/BtnLinkIconText';
-import * as imgPeople from 'helpers/imageImport/BespokeSolutions/imagePeople';
+import * as imgPeople from 'service/imageImport/bespokeSolutions/imagePeople';
 
 const BespokeSolutions = () => {
   return (

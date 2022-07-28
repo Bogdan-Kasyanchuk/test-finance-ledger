@@ -16,19 +16,6 @@ ${normalize}
   border: 0;
 }
 
-#root{
-  margin-left: auto;
-  margin-right: auto;
-
-  ${size.tabletMin} {
-    min-width: 768px;
-  }
-
-  ${size.desktopMin} {
-    width: 1360px;
-  }
-}
-
 *,
 h1,
 h2,
@@ -43,13 +30,22 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  font-family: 'Open Sans', sans-serif;
-  ${'' /* font-size: 16px; */}
-  color: ${firstColor};
-  ${'' /* line-height: 1; */}
+#root{
+  margin-left: auto;
+  margin-right: auto;
+  ${size.tabletMin} {
+    min-width: 768px;
+  }
+  ${size.desktopMin} {
+    width: 1360px;
+  }
 }
 
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: ${firstColor};
+}
 
 button,
 input,

@@ -22,7 +22,7 @@ const BtnLinkIconText = ({ iconName, children, home, blog }) => {
 };
 
 BtnLinkIconText.propTypes = {
-  iconName: PropTypes.string,
+  iconName: PropTypes.string.isRequired,
   children: PropTypes.node,
   home: PropTypes.bool,
   blog: PropTypes.bool,
@@ -34,7 +34,6 @@ const A = styled.a`
   display: inline-block;
   padding: 10px 30px;
   font-size: 16px;
-  font-weight: 400;
   line-height: 1.6;
   color: ${({ home }) => (home ? secondColor : null)};
   border: ${({ home }) => (home ? null : border)};
@@ -63,5 +62,6 @@ const A = styled.a`
     color: ${({ home, blog }) => (home ? null : blog ? bgColor : accentColor)};
     background-color: ${({ home }) =>
       home ? 'rgba(40, 167, 69, 0.9)' : secondColor};
+    outline: none;
   }
 `;

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
+import Container from 'components/Container/Container';
 import Logo from 'components/Logo/Logo';
 import Navigation from 'components/Navigation/Navigation';
-import Container from 'components/Container/Container';
 import { size } from 'styles/variables';
 
 const AppBar = () => {
@@ -40,17 +40,21 @@ const Nav = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+
+  ${size.mobileMax} {
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 280px;
+  }
 
   ${size.tabletMin} {
     justify-content: space-between;
-    flex-wrap: nowrap;
   }
 
   .logo {
     ${size.mobileMax} {
       margin-bottom: 12px;
-      flex-basis: 100%;
     }
   }
 `;
