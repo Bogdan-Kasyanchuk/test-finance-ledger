@@ -9,7 +9,7 @@ const Footer = () => {
     <FooterTag>
       <Container>
         <SocialLinkList />
-        <ParagraphText>Copyright © 2021 - FinanceLedger</ParagraphText>
+        <ParagraphText>Copyright © 2022 - FinanceLedger</ParagraphText>
       </Container>
     </FooterTag>
   );

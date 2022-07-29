@@ -7,15 +7,17 @@ import { size, firstColor, thirdColor, linGradBgHome } from 'styles/variables';
 
 const SkyLimit = () => {
   return (
-    <Section>
-      <Container>
-        <Title>The Sky Is The Limit</Title>
-        <P>We provide world class financial assistance</P>
-        <BtnLinkIconText iconName="arrow" home>
-          Read More
-        </BtnLinkIconText>
-      </Container>
-    </Section>
+    <>
+      <Section>
+        <Container>
+          <Title>The Sky Is The Limit</Title>
+          <P>We provide world class financial assistance</P>
+          <BtnLinkIconText iconName="arrow" home>
+            Read More
+          </BtnLinkIconText>
+        </Container>
+      </Section>
+    </>
   );
 };
 

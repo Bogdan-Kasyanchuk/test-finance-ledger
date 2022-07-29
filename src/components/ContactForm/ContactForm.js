@@ -33,7 +33,7 @@ const ContactForm = () => {
         <Label>
           <Input
             type="text"
-            {...register('name', validation.name)}
+            {...register('name')}
             placeholder="Jacob Mercer"
             title={TITLE_FORM.NAME}
           />
@@ -106,7 +106,7 @@ const Input = styled.input`
 
   :not(:placeholder-shown) + .placeholder,
   :focus-visible + .placeholder {
-    transform: translateY(-180%);
+    transform: translateY(-185%);
   }
 
   :focus-visible::placeholder {
@@ -133,15 +133,16 @@ const Placeholder = styled.span`
 
 const ErrorWrapper = styled.span`
   position: absolute;
-  top: 43px;
+  top: 45px;
   left: 0;
   display: flex;
   align-items: center;
   color: ${errorColor};
 
   .icon {
+    position: relative;
+    top: 1px;
     margin-right: 4px;
-    fill: currentColor;
   }
 `;
 

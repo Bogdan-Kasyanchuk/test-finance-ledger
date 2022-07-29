@@ -22,7 +22,6 @@ const BtnLinkIconText = ({ iconName, children, home, blog }) => {
 };
 
 BtnLinkIconText.propTypes = {
-  iconName: PropTypes.string.isRequired,
   children: PropTypes.node,
   home: PropTypes.bool,
   blog: PropTypes.bool,
@@ -50,11 +49,12 @@ const A = styled.a`
   }
 
   .icon {
+    position: relative;
+    top: -1px;
     margin-right: 4px;
     width: 9px;
     height: 15px;
     vertical-align: middle;
-    fill: currentColor;
   }
 
   :hover,

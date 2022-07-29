@@ -43,7 +43,6 @@ const CustomNavLink = styled(NavLink)`
 
   .icon {
     margin-right: 6px;
-    fill: currentColor;
 
     ${size.tabletMin} {
       margin-right: 10px;

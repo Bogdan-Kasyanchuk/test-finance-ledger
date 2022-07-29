@@ -33,9 +33,11 @@ html {
 #root{
   margin-left: auto;
   margin-right: auto;
+
   ${size.tabletMin} {
     min-width: 768px;
   }
+  
   ${size.desktopMin} {
     width: 1360px;
   }
