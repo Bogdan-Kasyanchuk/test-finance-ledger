@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 import sprite from 'assets/sprite.svg';
 
 const Icon = ({ iconName, width, height, fill, stroke }) => {
   return (
-    <svg
+    <Svg
       className={`icon icon-${iconName}`}
       width={width}
       height={height}
@@ -11,7 +12,7 @@ const Icon = ({ iconName, width, height, fill, stroke }) => {
       stroke={stroke}
     >
       <use xlinkHref={`${sprite}#${iconName}`}></use>
-    </svg>
+    </Svg>
   );
 };
 
@@ -32,3 +33,7 @@ Icon.propTypes = {
 };
 
 export default Icon;
+
+const Svg = styled.svg`
+  fill: currentColor;
+`;

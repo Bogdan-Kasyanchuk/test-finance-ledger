@@ -13,8 +13,12 @@ const ButtonText = ({ type, children }) => {
   return <Button type={type}>{children}</Button>;
 };
 
+ButtonText.defaultProps = {
+  type: 'button',
+};
+
 ButtonText.propTypes = {
-  type: PropTypes.string.isRequired,
+  type: PropTypes.string,
   children: PropTypes.node,
 };
 

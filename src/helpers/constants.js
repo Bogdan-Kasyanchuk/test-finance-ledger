@@ -3,7 +3,3 @@ export const TITLE_FORM = {
   EMAIL:
     'Email can contain numbers and letters, dashes and under dashes. For example: pibij62253@mail.com, pSDi-j62_2@mail.com',
 };
-
-export const LIMIT = {
-  NAME_MIN: 3,
-};

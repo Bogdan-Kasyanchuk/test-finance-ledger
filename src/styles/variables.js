@@ -20,6 +20,9 @@ const timing = 'cubic-bezier(0.4, 0, 0.2, 1)';
 // gradient
 const linGradBgHome = 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4))';
 
+// box-shadow
+const boxShadow = '2px 2px 12px 2px rgba(0, 0, 0, 0.4)';
+
 //breakpoints
 const size = {
   mobileMin: '@media screen and (min-width: 320px)',
@@ -45,5 +48,6 @@ export {
   duration,
   timing,
   linGradBgHome,
+  boxShadow,
   size,
 };

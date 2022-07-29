@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import Container from 'components/Container/Container';
 import Logo from 'components/Logo/Logo';
 import Navigation from 'components/Navigation/Navigation';
-import { size } from 'styles/variables';
+import { size, duration, timing } from 'styles/variables';
 
 const AppBar = () => {
   return (
@@ -20,8 +20,6 @@ const AppBar = () => {
 export default AppBar;
 
 const Header = styled.header`
-  opacity: 0.8;
-  background-color: #333;
   position: fixed;
   top: 0;
   z-index: 1000;
@@ -29,6 +27,7 @@ const Header = styled.header`
   max-width: 1360px;
   padding-top: 20px;
   padding-bottom: 20px;
+  transition: background-color ${duration} ${timing};
 
   ${size.desktopMin} {
     padding-top: 14px;
