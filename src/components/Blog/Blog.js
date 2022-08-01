@@ -10,7 +10,7 @@ import * as imgBlog from 'service/imageImport/blog/imageBlog';
 
 const Blog = () => {
   return (
-    <SectionBlog>
+    <SectionBlog id="blog">
       <ImageBlogWrapper>
         <Image
           deskWebp={imgBlog.blogDeskWebp}

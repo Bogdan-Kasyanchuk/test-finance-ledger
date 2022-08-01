@@ -2,15 +2,15 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { size, bgColorForm } from 'styles/variables';
 
-const FormContactWrapper = ({ children }) => {
+const FormWrapper = ({ children }) => {
   return <Div>{children}</Div>;
 };
 
-FormContactWrapper.propTypes = {
+FormWrapper.propTypes = {
   children: PropTypes.node,
 };
 
-export default FormContactWrapper;
+export default FormWrapper;
 
 const Div = styled.div`
   padding: 40px 20px;

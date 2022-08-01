@@ -14,7 +14,7 @@ import { sendFormNetlify } from 'service/formNetlify';
 import { validation } from 'service/validation';
 import { TITLE_FORM } from 'helpers/constants';
 
-const ContactForm = () => {
+const Form = () => {
   const {
     register,
     handleSubmit,
@@ -66,7 +66,7 @@ const ContactForm = () => {
   );
 };
 
-export default ContactForm;
+export default Form;
 
 const InputWrapper = styled.div`
   margin-bottom: 40px;

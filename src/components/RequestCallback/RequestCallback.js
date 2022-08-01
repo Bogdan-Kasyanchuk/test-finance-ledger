@@ -1,12 +1,12 @@
 import SectionBlog from 'components/SectionBlog/SectionBlog';
 import ImageBlogWrapper from 'components/ImageBlogWrapper/ImageBlogWrapper';
 import Image from 'components/Image/Image';
-import FormContactWrapper from 'components/FormContactWrapper/FormContactWrapper';
+import FormWrapper from 'components/FormWrapper/FormWrapper';
 import SubTitle from 'components/SubTitle/SubTitle';
-import ContactForm from 'components/ContactForm/ContactForm';
+import Form from 'components/Form/Form';
 import * as imageContact from 'service/imageImport/contact/imageContact';
 
-const Contact = () => {
+const RequestCallback = () => {
   return (
     <SectionBlog>
       <ImageBlogWrapper>
@@ -27,12 +27,12 @@ const Contact = () => {
           alt="contact"
         />
       </ImageBlogWrapper>
-      <FormContactWrapper>
+      <FormWrapper>
         <SubTitle>Request Callback</SubTitle>
-        <ContactForm />
-      </FormContactWrapper>
+        <Form />
+      </FormWrapper>
     </SectionBlog>
   );
 };
 
-export default Contact;
+export default RequestCallback;

@@ -1,4 +1,3 @@
-import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Icon from 'components/Icon/Icon';
@@ -12,11 +11,11 @@ import {
 
 const Logo = ({ firstChildren, secondChildren }) => {
   return (
-    <CustomNavLink to="/" className="logo">
+    <A href="/" className="logo">
       <Icon iconName="logo" width="40px" height="31px" />
       {firstChildren}
       <Span>{secondChildren}</Span>
-    </CustomNavLink>
+    </A>
   );
 };
 
@@ -27,7 +26,7 @@ Logo.propTypes = {
 
 export default Logo;
 
-const CustomNavLink = styled(NavLink)`
+const A = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;

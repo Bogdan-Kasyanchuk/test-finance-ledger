@@ -1,15 +1,15 @@
 import GalleryList from 'components/GalleryList/GalleryList';
-import AboutGalleryItem from 'components/AboutGalleryItem/AboutGalleryItem';
+import TeamGalleryItem from 'components/TeamGalleryItem/TeamGalleryItem';
 import { images } from 'service/imageImport/aboutGallery/allImage';
 
-const AboutGallery = () => {
+const TeamGallery = () => {
   return (
     <GalleryList>
       {images.map(el => (
-        <AboutGalleryItem key={el.name} el={el} />
+        <TeamGalleryItem key={el.name} el={el} />
       ))}
     </GalleryList>
   );
 };
 
-export default AboutGallery;
+export default TeamGallery;

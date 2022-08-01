@@ -10,8 +10,8 @@
     "react-hook-form": "^7.25.1",
     "react-in-viewport": "^1.0.0-alpha.28",
     "react-loader-spinner": "^5.1.7-beta.1",
-    "react-router-dom": "^6.3.0",
-    "react-scripts": "5.0.0"
+    "react-scripts": "5.0.0",
+    "react-scroll": "^1.8.7"
   },
   "scripts": {
     "start": "react-scripts start",

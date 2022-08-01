@@ -9,7 +9,7 @@ import {
   boxShadow,
 } from 'styles/variables';
 
-const AboutGalleryItem = ({ el }) => {
+const TeamGalleryItem = ({ el }) => {
   return (
     <Li>
       <ImageWrapper>
@@ -39,7 +39,7 @@ const AboutGalleryItem = ({ el }) => {
   );
 };
 
-export default AboutGalleryItem;
+export default TeamGalleryItem;
 
 const Li = styled.li`
   ${size.mobileMax} {

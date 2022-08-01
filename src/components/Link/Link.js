@@ -1,20 +1,28 @@
-import { NavLink } from 'react-router-dom';
+import { memo } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import { Link as ScrollLink } from 'react-scroll';
+import { useSizeHeader } from 'hooks/useSizeHeader';
 import { size, secondColor, accentColor } from 'styles/variables';
 
 const Link = ({ to, children }) => {
-  return <CustomNavLink to={to}>{children}</CustomNavLink>;
+  const sizeHeader = useSizeHeader();
+
+  return (
+    <CustomScrollLinc to={to} smooth={true} offset={-sizeHeader}>
+      {children}
+    </CustomScrollLinc>
+  );
 };
 
 Link.propTypes = {
-  to: PropTypes.string.isRequired,
+  to: PropTypes.string,
   children: PropTypes.node,
 };
 
-export default Link;
+export default memo(Link);
 
-const CustomNavLink = styled(NavLink)`
+const CustomScrollLinc = styled(ScrollLink)`
   position: relative;
   font-size: 16px;
   line-height: 1.6;
