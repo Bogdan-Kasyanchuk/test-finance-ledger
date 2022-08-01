@@ -5,23 +5,21 @@ import BtnLinkIconText from 'components/BtnLinkIconText/BtnLinkIconText';
 import * as imgShowcase from 'service/imageImport/skyLimit/imageShowcase';
 import { size, firstColor, thirdColor, linGradBgHome } from 'styles/variables';
 
-const SkyLimit = () => {
+const Hero = () => {
   return (
-    <>
-      <Section>
-        <Container>
-          <Title>The Sky Is The Limit</Title>
-          <P>We provide world class financial assistance</P>
-          <BtnLinkIconText iconName="arrow" home>
-            Read More
-          </BtnLinkIconText>
-        </Container>
-      </Section>
-    </>
+    <Section id="hero">
+      <Container>
+        <Title>The Sky Is The Limit</Title>
+        <P>We provide world class financial assistance</P>
+        <BtnLinkIconText iconName="arrow" home>
+          Read More
+        </BtnLinkIconText>
+      </Container>
+    </Section>
   );
 };
 
-export default SkyLimit;
+export default Hero;
 
 const Section = styled.section`
   padding-top: 142px;

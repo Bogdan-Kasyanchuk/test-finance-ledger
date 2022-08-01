@@ -26,10 +26,6 @@ h6 {
   margin: 0;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 #root{
   margin-left: auto;
   margin-right: auto;

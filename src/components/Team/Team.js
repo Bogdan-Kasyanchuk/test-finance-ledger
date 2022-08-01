@@ -4,24 +4,24 @@ import TextTeamWrapper from 'components/TextTeamWrapper/TextTeamWrapper';
 import Paragraph from 'components/Paragraph/Paragraph';
 import SubTitle from 'components/SubTitle/SubTitle';
 import ParagraphText from 'components/ParagraphText/ParagraphText';
-import CasesGallery from 'components/CasesGallery/CasesGallery';
+import TeamGallery from 'components/TeamGallery/TeamGallery';
 
-const Cases = () => {
+const Team = () => {
   return (
-    <SectionStandard id="cases">
+    <SectionStandard>
       <Container>
         <TextTeamWrapper>
-          <Paragraph>This is what we do</Paragraph>
-          <SubTitle>Business Cases</SubTitle>
+          <Paragraph>Who we are</Paragraph>
+          <SubTitle>Our Professional Team</SubTitle>
           <ParagraphText>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
             sapiente!
           </ParagraphText>
         </TextTeamWrapper>
-        <CasesGallery />
+        <TeamGallery />
       </Container>
     </SectionStandard>
   );
 };
 
-export default Cases;
+export default Team;

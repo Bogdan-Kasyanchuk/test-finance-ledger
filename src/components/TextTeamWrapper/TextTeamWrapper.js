@@ -2,15 +2,15 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { size } from 'styles/variables';
 
-const TextAboutWrapper = ({ children }) => {
+const TextTeamWrapper = ({ children }) => {
   return <Div>{children}</Div>;
 };
 
-TextAboutWrapper.propTypes = {
+TextTeamWrapper.propTypes = {
   children: PropTypes.node,
 };
 
-export default TextAboutWrapper;
+export default TextTeamWrapper;
 
 const Div = styled.div`
   text-align: center;

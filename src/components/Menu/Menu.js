@@ -2,29 +2,29 @@ import styled from 'styled-components';
 import Link from 'components/Link/Link';
 import { size } from 'styles/variables';
 
-const Navigation = () => {
+const Menu = () => {
   return (
     <Ul>
       <Li>
-        <Link to="/">Home</Link>
+        <Link to="hero">Home</Link>
       </Li>
       <Li>
-        <Link to="/about">About</Link>
+        <Link to="about">About</Link>
       </Li>
       <Li>
-        <Link to="/cases">Cases</Link>
+        <Link to="cases">Cases</Link>
       </Li>
       <Li>
-        <Link to="/blog">Blog</Link>
+        <Link to="blog">Blog</Link>
       </Li>
       <Li>
-        <Link to="/contact">Contact</Link>
+        <Link to="contact">Contact</Link>
       </Li>
     </Ul>
   );
 };
 
-export default Navigation;
+export default Menu;
 
 const Ul = styled.ul`
   display: flex;

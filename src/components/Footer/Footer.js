@@ -6,7 +6,7 @@ import { firstColor, secondColor } from 'styles/variables';
 
 const Footer = () => {
   return (
-    <FooterTag>
+    <FooterTag id="contact">
       <Container>
         <SocialLinkList />
         <ParagraphText>Copyright © 2022 - FinanceLedger</ParagraphText>
