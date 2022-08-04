@@ -30,15 +30,17 @@ export default Header;
 const HeaderTag = styled.header`
   position: fixed;
   top: 0;
+  left: 50%;
   z-index: 1000;
   width: 100%;
-  max-width: 1360px;
+  max-width: 1650px;
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: ${({ inViewport, leaveCount }) =>
     !inViewport && leaveCount
       ? 'rgba(51, 51, 51, 0.8)'
       : 'rgba(51, 51, 51, 0)'};
+  transform: translateX(-50%);
   transition: background-color ${duration} ${timing};
 
   ${size.desktopMin} {

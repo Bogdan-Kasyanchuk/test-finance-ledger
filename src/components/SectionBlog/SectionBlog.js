@@ -14,6 +14,10 @@ SectionBlog.propTypes = {
 export default SectionBlog;
 
 const Section = styled.section`
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1650px;
+
   ${size.tabletMin} {
     display: flex;
   }

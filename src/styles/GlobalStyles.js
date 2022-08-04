@@ -26,19 +26,6 @@ h6 {
   margin: 0;
 }
 
-#root{
-  margin-left: auto;
-  margin-right: auto;
-
-  ${size.tabletMin} {
-    min-width: 768px;
-  }
-  
-  ${size.desktopMin} {
-    width: 1360px;
-  }
-}
-
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;

@@ -16,17 +16,18 @@ const Div = styled.div`
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  max-width: 767px;
   padding-left: 20px;
   padding-right: 20px;
 
   ${size.tabletMin} {
-    min-width: 768px;
+    max-width: 1359px;
     padding-left: 32px;
     padding-right: 32px;
   }
 
   ${size.desktopMin} {
-    width: 1360px;
+    max-width: 1650px;
     padding-left: 28px;
     padding-right: 28px;
   }

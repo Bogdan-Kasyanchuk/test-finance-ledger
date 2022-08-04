@@ -2,7 +2,7 @@ import SectionStandard from 'components/SectionStandard/SectionStandard';
 import Container from 'components/Container/Container';
 import TextTeamWrapper from 'components/TextTeamWrapper/TextTeamWrapper';
 import Paragraph from 'components/Paragraph/Paragraph';
-import SubTitle from 'components/SubTitle/SubTitle';
+import SubTitleSection from 'components/SubTitleSection/SubTitleSection';
 import ParagraphText from 'components/ParagraphText/ParagraphText';
 import CasesGallery from 'components/CasesGallery/CasesGallery';
 
@@ -12,7 +12,7 @@ const Cases = () => {
       <Container>
         <TextTeamWrapper>
           <Paragraph>This is what we do</Paragraph>
-          <SubTitle>Business Cases</SubTitle>
+          <SubTitleSection>Business Cases</SubTitleSection>
           <ParagraphText>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
             sapiente!

@@ -2,14 +2,14 @@ import SectionBlog from 'components/SectionBlog/SectionBlog';
 import ImageBlogWrapper from 'components/ImageBlogWrapper/ImageBlogWrapper';
 import Image from 'components/Image/Image';
 import FormWrapper from 'components/FormWrapper/FormWrapper';
-import SubTitle from 'components/SubTitle/SubTitle';
+import SubTitleSection from 'components/SubTitleSection/SubTitleSection';
 import Form from 'components/Form/Form';
 import * as imageContact from 'service/imageImport/contact/imageContact';
 
 const RequestCallback = () => {
   return (
     <SectionBlog>
-      <ImageBlogWrapper>
+      <ImageBlogWrapper maxHeightTab="356px" maxHeightDesk="456px">
         <Image
           deskWebp={imageContact.contactDeskWebp}
           deskWebp_2x={imageContact.contactDeskWebp_2x}
@@ -28,7 +28,7 @@ const RequestCallback = () => {
         />
       </ImageBlogWrapper>
       <FormWrapper>
-        <SubTitle>Request Callback</SubTitle>
+        <SubTitleSection>Request Callback</SubTitleSection>
         <Form />
       </FormWrapper>
     </SectionBlog>

@@ -1,15 +1,15 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const SubTitle = ({ children }) => {
+const SubTitleSection = ({ children }) => {
   return <H2 className="sub-title">{children}</H2>;
 };
 
-SubTitle.propTypes = {
+SubTitleSection.propTypes = {
   children: PropTypes.node,
 };
 
-export default SubTitle;
+export default SubTitleSection;
 
 const H2 = styled.h2`
   font-size: 38px;
