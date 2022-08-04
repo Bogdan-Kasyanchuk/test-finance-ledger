@@ -18,6 +18,9 @@ const Footer = () => {
 export default Footer;
 
 const FooterTag = styled.footer`
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1650px;
   padding-top: 20px;
   padding-bottom: 20px;
   color: ${secondColor};
