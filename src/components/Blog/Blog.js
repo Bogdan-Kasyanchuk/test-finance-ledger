@@ -3,15 +3,15 @@ import ImageBlogWrapper from 'components/ImageBlogWrapper/ImageBlogWrapper';
 import Image from 'components/Image/Image';
 import TextBlogWrapper from 'components/TextBlogWrapper/TextBlogWrapper';
 import Paragraph from 'components/Paragraph/Paragraph';
-import SubTitle from 'components/SubTitle/SubTitle';
+import SubTitleSection from 'components/SubTitleSection/SubTitleSection';
 import ParagraphText from 'components/ParagraphText/ParagraphText';
-import BtnLinkIconText from 'components/BtnLinkIconText/BtnLinkIconText';
+import LinkIconText from 'components/LinkIconText/LinkIconText';
 import * as imgBlog from 'service/imageImport/blog/imageBlog';
 
 const Blog = () => {
   return (
     <SectionBlog id="blog">
-      <ImageBlogWrapper>
+      <ImageBlogWrapper maxHeightTab="482px" maxHeightDesk="460px">
         <Image
           deskWebp={imgBlog.blogDeskWebp}
           deskWebp_2x={imgBlog.blogDeskWebp_2x}
@@ -31,16 +31,16 @@ const Blog = () => {
       </ImageBlogWrapper>
       <TextBlogWrapper blog>
         <Paragraph>April 16 2020</Paragraph>
-        <SubTitle>Blog Post One</SubTitle>
+        <SubTitleSection>Blog Post One</SubTitleSection>
         <ParagraphText>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate,
           ipsum dignissimos quae laudantium asperiores nam aliquid impedit harum
           illum dolore explicabo ab dolores itaque rerum temporibus doloribus
           iste maiores deleniti?
         </ParagraphText>
-        <BtnLinkIconText iconName="arrow" blog>
+        <LinkIconText iconName="arrow" blog>
           Read Our Blog
-        </BtnLinkIconText>
+        </LinkIconText>
       </TextBlogWrapper>
     </SectionBlog>
   );

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import Container from 'components/Container/Container';
-import Title from 'components/Title/Title';
-import BtnLinkIconText from 'components/BtnLinkIconText/BtnLinkIconText';
+import TitleSection from 'components/TitleSection/TitleSection';
+import LinkIconText from 'components/LinkIconText/LinkIconText';
 import * as imgShowcase from 'service/imageImport/skyLimit/imageShowcase';
 import { size, firstColor, thirdColor, linGradBgHome } from 'styles/variables';
 
@@ -9,11 +9,11 @@ const Hero = () => {
   return (
     <Section id="hero">
       <Container>
-        <Title>The Sky Is The Limit</Title>
+        <TitleSection>The Sky Is The Limit</TitleSection>
         <P>We provide world class financial assistance</P>
-        <BtnLinkIconText iconName="arrow" home>
+        <LinkIconText iconName="arrow" home>
           Read More
-        </BtnLinkIconText>
+        </LinkIconText>
       </Container>
     </Section>
   );
@@ -22,6 +22,9 @@ const Hero = () => {
 export default Hero;
 
 const Section = styled.section`
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1650px;
   padding-top: 142px;
   padding-bottom: 96px;
   text-align: center;

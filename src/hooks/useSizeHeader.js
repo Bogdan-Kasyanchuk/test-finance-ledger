@@ -1,18 +1,18 @@
 import { useState, useEffect } from 'react';
 
 export const useSizeHeader = () => {
-  const [sizeHeader, setSizeHeader] = useState(null);
+  const [heightHeader, setHeightHeader] = useState(null);
 
   useEffect(() => {
-    const clientHeight = () =>
-      document.body?.lastElementChild?.firstChild?.clientHeight;
+    const getHeight = () =>
+      document.body?.lastElementChild?.firstChild?.getHeight;
 
-    setSizeHeader(clientHeight());
+    setHeightHeader(getHeight());
 
-    window.addEventListener('resize', () => setSizeHeader(clientHeight()));
+    window.addEventListener('resize', () => setHeightHeader(getHeight()));
     return () =>
-      window.removeEventListener('resize', () => setSizeHeader(clientHeight()));
-  }, [sizeHeader]);
+      window.removeEventListener('resize', () => setHeightHeader(getHeight()));
+  }, [heightHeader]);
 
-  return sizeHeader;
+  return heightHeader;
 };

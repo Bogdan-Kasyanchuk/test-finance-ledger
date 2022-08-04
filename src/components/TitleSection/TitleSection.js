@@ -2,15 +2,15 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { size, thirdColor } from 'styles/variables';
 
-const Title = ({ children }) => {
+const TitleSection = ({ children }) => {
   return <H1 className="title">{children}</H1>;
 };
 
-Title.propTypes = {
+TitleSection.propTypes = {
   children: PropTypes.node,
 };
 
-export default Title;
+export default TitleSection;
 
 const H1 = styled.h1`
   font-size: 52px;

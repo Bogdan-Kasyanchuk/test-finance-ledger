@@ -12,7 +12,7 @@ import {
   timing,
 } from 'styles/variables';
 
-const BtnLinkIconText = ({ iconName, children, home, blog }) => {
+const LinkIconText = ({ iconName, children, home, blog }) => {
   return (
     <A href="#" home={home} blog={blog}>
       <Icon iconName={iconName} />
@@ -21,13 +21,13 @@ const BtnLinkIconText = ({ iconName, children, home, blog }) => {
   );
 };
 
-BtnLinkIconText.propTypes = {
+LinkIconText.propTypes = {
   children: PropTypes.node,
   home: PropTypes.bool,
   blog: PropTypes.bool,
 };
 
-export default BtnLinkIconText;
+export default LinkIconText;
 
 const A = styled.a`
   display: inline-block;

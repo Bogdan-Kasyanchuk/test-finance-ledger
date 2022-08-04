@@ -6,10 +6,10 @@ import { useSizeHeader } from 'hooks/useSizeHeader';
 import { size, secondColor, accentColor } from 'styles/variables';
 
 const Link = ({ to, children }) => {
-  const sizeHeader = useSizeHeader();
+  const heightHeader = useSizeHeader();
 
   return (
-    <CustomScrollLinc to={to} smooth={true} offset={-sizeHeader}>
+    <CustomScrollLinc to={to} smooth={true} offset={-heightHeader}>
       {children}
     </CustomScrollLinc>
   );
