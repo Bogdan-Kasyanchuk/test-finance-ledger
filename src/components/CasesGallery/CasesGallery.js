@@ -4,7 +4,7 @@ import 'react-awesome-lightbox/build/style.css';
 import GalleryList from 'components/GalleryList/GalleryList';
 import CasesGalleryItem from 'components/CasesGalleryItem/CasesGalleryItem';
 import { images } from 'service/imageImport/casesGallery/allImage';
-import { bodyStyle } from 'service/setStyle';
+import { setBodyStyle } from 'service/setBodyStyle';
 
 const CasesGallery = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,12 +16,12 @@ const CasesGallery = () => {
     }
     setIndex(images.findIndex(el => el.title === target.alt));
     setIsOpen(true);
-    bodyStyle('hidden');
+    setBodyStyle('hidden');
   };
 
   const closeModal = () => {
     setIsOpen(false);
-    bodyStyle('auto');
+    setBodyStyle('auto');
   };
 
   return (
